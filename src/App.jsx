@@ -1,10 +1,13 @@
 import React from 'react'
+import  Header from './components/Header'
+import DisplaySeries from './components/DisplaySeries'
 
 export const App = () => {
   return (
-    <div>
-      
-    </div>
+    <>
+      <Header /> 
+      <DisplaySeries />
+      </>
   )
 }
 export default App

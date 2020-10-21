@@ -10,7 +10,7 @@ describe("Visitor can see", () => {
     cy.visit("http://localhost:3000")
   })
   it("list of most popular series", () => {
-    cy.get("[data-cy='header']").should("be.visible)
-    cy.get("")
+    cy.get("[data-cy='header']").should("be.visible")
+    cy.get("[data-cy='list']").should('have.length', 10)
   })
 })
