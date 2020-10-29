@@ -26,7 +26,6 @@ const DisplaySeries = () => {
           alt={serie.id}
           key={serie.id}
         />
-        ;
       </div>
     );
   });
