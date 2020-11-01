@@ -12,7 +12,7 @@ const DisplaySeries = () => {
     let response = await axios.get(
       "https://cors-anywhere.herokuapp.com/https://content.viaplay.se/pc-se/serier/samtliga"
     );
-    debugger;
+    
     setSeries(
       response.data._embedded["viaplay:blocks"][0]._embedded["viaplay:products"]
     );
@@ -30,7 +30,7 @@ const DisplaySeries = () => {
     );
   });
 
-  return <div>{seriesList}</div>;
+  return <div className="container">{seriesList}</div>;
 };
 
 export default DisplaySeries;
